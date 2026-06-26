@@ -39,6 +39,25 @@ project/
 └── README.md
 ```
 
+## How to Run
+
+Open the project locally with any static server.
+
+### Option 1: Python
+
+```bash
+cd /path/to/hackthon
+python -m http.server 8000
+```
+
+Then open http://127.0.0.1:8000/ in your browser.
+
+### Option 2: VS Code Live Server
+
+1. Open the folder in VS Code
+2. Install the Live Server extension
+3. Right-click on index.html and choose Open with Live Server
+
 ## Performance
 
 - Uses transform and opacity-based animations for smooth rendering
