@@ -16,6 +16,10 @@ revealItems.forEach((item) => revealObserver.observe(item));
 
 const progressBar = document.querySelector(".scroll-progress");
 
+const updateScrollState = () => {
+  document.body.classList.toggle("is-scrolled", window.scrollY > 20);
+};
+
 const updateProgress = () => {
   const scrollTop = window.scrollY;
   const height = document.documentElement.scrollHeight - window.innerHeight;
@@ -25,8 +29,12 @@ const updateProgress = () => {
   }
 };
 
-window.addEventListener("scroll", updateProgress, { passive: true });
+window.addEventListener("scroll", () => {
+  updateScrollState();
+  updateProgress();
+}, { passive: true });
 window.addEventListener("resize", updateProgress);
+updateScrollState();
 updateProgress();
 
 const faqItems = Array.from(document.querySelectorAll(".faq-item"));
