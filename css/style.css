@@ -97,6 +97,11 @@ a:focus-visible {
   border-radius: 999px;
   transition: background 220ms ease, box-shadow 220ms ease, border-color 220ms ease, transform 220ms ease;
   margin: 0 auto;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 body.is-scrolled .site-header {
@@ -106,9 +111,9 @@ body.is-scrolled .site-header {
 }
 
 body.is-scrolled .nav {
-  background: rgba(18, 18, 23, 0.9);
-  border-color: rgba(255, 255, 255, 0.14);
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+  background: rgba(18, 18, 23, 0.8);
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
 }
 
 .brand {
