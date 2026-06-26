@@ -80,11 +80,13 @@ a:focus-visible {
 }
 
 .site-header {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  inset: 0 0 auto 0;
   z-index: 40;
-  padding: 1rem 0 0;
-  transition: padding 220ms ease;
+  padding: 1rem 0;
+  transition: padding 220ms ease, background 220ms ease, backdrop-filter 220ms ease;
+  background: transparent;
+  backdrop-filter: blur(0px);
 }
 
 .nav {
@@ -94,10 +96,13 @@ a:focus-visible {
   padding: 1rem 1.25rem;
   border-radius: 999px;
   transition: background 220ms ease, box-shadow 220ms ease, border-color 220ms ease, transform 220ms ease;
+  margin: 0 auto;
 }
 
 body.is-scrolled .site-header {
-  padding: 0.7rem 0 0;
+  padding: 0.7rem 0;
+  background: rgba(9, 9, 11, 0.72);
+  backdrop-filter: blur(18px);
 }
 
 body.is-scrolled .nav {
@@ -144,7 +149,7 @@ body.is-scrolled .nav {
   grid-template-columns: 1.05fr 0.95fr;
   gap: 2.5rem;
   align-items: center;
-  padding-top: 4rem;
+  padding-top: 8rem;
   min-height: 100vh;
 }
 
