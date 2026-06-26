@@ -1,0 +1,89 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 500ms ease, transform 500ms ease;
+  will-change: transform, opacity;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: var(--dark);
+  z-index: 50;
+  transition: opacity 400ms ease, visibility 400ms ease;
+}
+
+body.is-loaded .loading-overlay {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-shimmer {
+  width: 240px;
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(125, 249, 255, 0.16), rgba(125, 249, 255, 0.7), rgba(125, 249, 255, 0.16));
+  background-size: 200% 100%;
+  animation: shimmer 1.2s linear infinite;
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  z-index: 60;
+  background: linear-gradient(90deg, var(--accent), var(--primary));
+  transition: width 120ms ease;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
