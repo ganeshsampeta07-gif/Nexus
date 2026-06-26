@@ -113,7 +113,7 @@ body.is-scrolled .site-header {
 body.is-scrolled .nav {
   background: rgba(18, 18, 23, 0.8);
   border-color: rgba(255, 255, 255, 0.16);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: none;
 }
 
 .brand {
