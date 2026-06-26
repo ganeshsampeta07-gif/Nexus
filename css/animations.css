@@ -29,7 +29,7 @@ body.is-loaded .loading-overlay {
   width: 240px;
   height: 8px;
   border-radius: 999px;
-  background: linear-gradient(90deg, rgba(125, 249, 255, 0.16), rgba(125, 249, 255, 0.7), rgba(125, 249, 255, 0.16));
+  background: linear-gradient(90deg, rgba(255, 200, 1, 0.16), rgba(255, 200, 1, 0.7), rgba(255, 200, 1, 0.16));
   background-size: 200% 100%;
   animation: shimmer 1.2s linear infinite;
 }

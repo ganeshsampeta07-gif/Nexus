@@ -1,7 +1,7 @@
 :root {
-  --primary: #5b5bd6;
-  --secondary: #7f7fff;
-  --accent: #7df9ff;
+  --primary: #ffc801;
+  --secondary: #ffd54a;
+  --accent: #ffe082;
   --dark: #09090b;
   --surface: #121217;
   --surface2: #18181b;
@@ -28,8 +28,8 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(123, 97, 255, 0.28), transparent 32%),
-    radial-gradient(circle at 80% 20%, rgba(125, 249, 255, 0.18), transparent 26%),
+    radial-gradient(circle at top left, rgba(255, 200, 1, 0.24), transparent 32%),
+    radial-gradient(circle at 80% 20%, rgba(255, 200, 1, 0.16), transparent 26%),
     var(--dark);
   line-height: 1.6;
   overflow-x: hidden;
@@ -107,7 +107,7 @@ a:focus-visible {
   height: 1rem;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--accent), var(--primary));
-  box-shadow: 0 0 20px rgba(125, 249, 255, 0.5);
+  box-shadow: 0 0 20px rgba(255, 200, 1, 0.5);
 }
 
 .nav__links {
@@ -213,7 +213,7 @@ h3 {
 .btn--primary {
   color: var(--dark);
   background: linear-gradient(135deg, var(--accent), var(--secondary));
-  box-shadow: 0 10px 30px rgba(93, 93, 214, 0.28);
+  box-shadow: 0 10px 30px rgba(255, 200, 1, 0.28);
 }
 
 .btn--secondary,
@@ -282,7 +282,7 @@ h3 {
 .hero__orb--one {
   width: 230px;
   height: 230px;
-  background: rgba(93, 93, 214, 0.35);
+  background: rgba(255, 200, 1, 0.35);
   top: 4%;
   left: 8%;
 }
@@ -290,7 +290,7 @@ h3 {
 .hero__orb--two {
   width: 180px;
   height: 180px;
-  background: rgba(125, 249, 255, 0.28);
+  background: rgba(255, 200, 1, 0.28);
   right: 6%;
   bottom: 10%;
   animation-delay: 1.5s;
@@ -314,7 +314,7 @@ h3 {
 .pill {
   padding: 0.3rem 0.7rem;
   border-radius: 999px;
-  background: rgba(125, 249, 255, 0.16);
+  background: rgba(255, 200, 1, 0.16);
   color: var(--accent);
   font-size: 0.8rem;
 }
@@ -335,7 +335,7 @@ h3 {
 
 .chart-bar {
   border-radius: 999px 999px 0 0;
-  background: linear-gradient(180deg, rgba(125, 249, 255, 0.85), rgba(93, 93, 214, 0.7));
+  background: linear-gradient(180deg, rgba(255, 200, 1, 0.85), rgba(255, 200, 1, 0.7));
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
@@ -476,7 +476,7 @@ h3 {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(93, 93, 214, 0.16), transparent 55%);
+  background: linear-gradient(135deg, rgba(255, 200, 1, 0.16), transparent 55%);
   opacity: 0;
   transition: opacity 220ms ease;
   pointer-events: none;
@@ -485,7 +485,7 @@ h3 {
 .feature-card:hover,
 .feature-card.is-active {
   transform: translateY(-6px) scale(1.01);
-  border-color: rgba(125, 249, 255, 0.3);
+  border-color: rgba(255, 200, 1, 0.3);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 16px 45px rgba(6, 8, 18, 0.35);
 }
 
@@ -513,7 +513,7 @@ h3 {
   width: 46px;
   height: 46px;
   border-radius: 14px;
-  background: rgba(125, 249, 255, 0.12);
+  background: rgba(255, 200, 1, 0.12);
   color: var(--accent);
   font-weight: 700;
   flex-shrink: 0;
@@ -580,7 +580,7 @@ h3 {
 
 .toggle-pill.is-active,
 .currency-pill.is-active {
-  background: linear-gradient(135deg, rgba(125, 249, 255, 0.16), rgba(93, 93, 214, 0.28));
+  background: linear-gradient(135deg, rgba(255, 200, 1, 0.16), rgba(255, 200, 1, 0.28));
   color: var(--text);
 }
 
@@ -598,8 +598,8 @@ h3 {
 }
 
 .pricing-card--featured {
-  background: linear-gradient(135deg, rgba(93, 93, 214, 0.2), rgba(125, 249, 255, 0.08));
-  border-color: rgba(125, 249, 255, 0.28);
+  background: linear-gradient(135deg, rgba(255, 200, 1, 0.2), rgba(255, 200, 1, 0.08));
+  border-color: rgba(255, 200, 1, 0.28);
   transform: translateY(-6px);
 }
 
